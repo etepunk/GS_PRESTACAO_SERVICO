@@ -1,0 +1,35 @@
+*{
+    body, html {
+        height: 100%;
+    }
+
+    .form-container {
+        height: 100%;
+    }
+}
+
+
+.social-buttons {
+    display: flex; 
+    justify-content: center;  
+    gap: 15px; 
+    margin-top: 20px; /* Pequeno espaço do conteúdo acima */
+    padding-bottom: 20px; /* Ajuste para não colar no final */
+}
+
+
+.social-buttons img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.social-buttons:hover {
+    box-shadow: 2px 4px 8px rgba(101, 98, 98, 0.5);
+    border-radius: 10%;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    transform-origin: center;
+}

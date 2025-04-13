@@ -1,0 +1,101 @@
+body{
+    background-color: #f0f4f8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; 
+}
+
+.btn-group {
+    background-color: transparent; 
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: none; 
+}
+
+.btn-group .btn {
+    padding: 8px 16px; 
+    font-size: 14px; 
+}
+
+
+.card{
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.card-img-top {
+    border-radius: 10px;
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+    object-position: center; 
+}
+
+
+.card-title{
+    font-size: 20px;
+    color: #2c3e50;
+    margin-top: 10px;
+}
+
+.card_desc{
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+.card_btn{
+    background-color: #e67e22;
+    border:none;
+    padding: 8px 15px;
+}
+
+.card_btn:hover{
+    background-color: #d35400;
+}
+
+.card_btn:active{
+    background-color: #f1c40f;
+}
+
+.card_btn:focus{
+    outline : 2px solid;
+    outline-offset: 2px;
+    
+}
+
+.social-buttons {
+    display: flex; 
+    justify-content: center;  
+    gap: 15px; 
+    margin-top: 20px; /* Pequeno espaço do conteúdo acima */
+    padding-bottom: 20px; /* Ajuste para não colar no final */
+}
+
+
+.social-buttons img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.social-buttons:hover {
+    box-shadow: 2px 4px 8px rgba(101, 98, 98, 0.5);
+    border-radius: 10%;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    transform-origin: center;
+}
