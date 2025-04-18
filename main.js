@@ -18,15 +18,18 @@ document.addEventListener("DOMContentLoaded", function () {
                     servico: servico
                 };
 
-                console.log("Novo cliente cadastrado:", cliente);
-
                 // Salvar no LocalStorage
                 let clientes = JSON.parse(localStorage.getItem("clientes")) || [];
                 clientes.push(cliente);
                 localStorage.setItem("clientes", JSON.stringify(clientes));
 
                 // Exibir mensagem de sucesso
-                document.getElementById(mensagemId).classList.remove("d-none");
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Serviço contratado com sucesso!',
+                    text: `Obrigado, ${nome}! Entraremos em contato via e-mail.`,
+                    confirmButtonText: 'Fechar'
+                });                
 
                 // Limpar campos do formulário
                 form.reset();
